@@ -54,7 +54,7 @@ const Hero = () => {
             Explore My Work
           </motion.button>
           <motion.a
-            href="https://drive.google.com/file/d/1KI_e6C6blodHCi_3AtdwqGmpYlHQ9r8S/view?usp=drivesdk" // replace with the path to your resume
+            href="https://drive.google.com/file/d/1Khj1oOyemueXpowo3YV-VgOw1YHp5_tw/view?usp=drivesdk" // replace with the path to your resume
             download="Dev Resume.pdf"
             className="px-6 py-3 bg-gray-800 text-white rounded-full hover:bg-gray-600 transition-all duration-300 transform hover:scale-105"
             whileHover={{ scale: 1.1 }}
