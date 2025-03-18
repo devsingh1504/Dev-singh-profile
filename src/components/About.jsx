@@ -32,14 +32,14 @@ const About = () => {
       >
         <h2 className="text-4xl font-bold mb-6 text-white">About Me</h2>
         <p className="text-lg text-gray-300 leading-relaxed">
-          My name is Dev. I am a professional and enthusiastic programmer in my
-          daily life. I am a quick learner with a self-learning attitude. I love
-          to learn and explore new technologies and am passionate about
-          problem-solving. I enjoy working with various web technologies and
-          strive to make the web more accessible and open to the world. My core
-          skills are based on JavaScript, and I love to leverage it for building
-          dynamic web applications. I am open to job opportunities that align
-          with my skills and interests.
+          Hi, I'm Dev a passionate and enthusiastic programmer. I have a strong
+          self-learning attitude and a keen interest in exploring new
+          technologies. Problem-solving excites me, and I enjoy working with
+          various web technologies to make the web more accessible and open. My
+          core expertise lies in JavaScript, which I leverage to build dynamic
+          and interactive web applications. I'm always eager to learn, grow, and
+          take on new challenges. I am open to job opportunities that align with
+          my skills and interests.
         </p>
       </motion.div>
     </section>

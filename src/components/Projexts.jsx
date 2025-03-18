@@ -4,10 +4,17 @@ import { motion } from "framer-motion";
 
 const projectsData = [
   {
-    name: "Learnignite",
-    description: "A website for the users of the LearnIgnite YouTube channel.",
-    image: "/learn.png", // Replace with the actual image path
-    link: "https://learnignite.onrender.com",
+    name: "StudySem",
+    description: "A platform for students to access notes and study materials.",
+    image: "/study.png", // Replace with the actual image path
+    link: "https://studysem.vercel.app",
+  },
+  {
+    name: "Textinsideimage",
+    description:
+      "Design thumbnails and templates instantly with the magic of AI.",
+    image: "/textinsideimage.png", // Replace with the actual image path
+    link: "https://www.textinsideimage.xyz",
   },
   {
     name: "Newsbyte",
@@ -23,10 +30,18 @@ const projectsData = [
     link: "https://message-talk.onrender.com",
   },
   {
-    name: "StudySem",
-    description: "A platform for students to access notes and study materials.",
-    image: "/study.png", // Replace with the actual image path
-    link: "https://studysem.onrender.com",
+    name: "Rankbridge",
+    description:
+      "A platform for students to check their rank and explore the top engineering colleges under IPU University.",
+    image: "/rankbridge.png", // Replace with the actual image path
+    link: "https://rankbridge.onrender.com",
+  },
+  {
+    name: "Learnignite",
+    description:
+      "A platform for students to access educational resources and enhance their learning experience.",
+    image: "/learn.png", // Replace with the actual image path
+    link: "https://learnignite.onrender.com",
   },
 ];
 

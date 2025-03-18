@@ -1,78 +1,40 @@
 // src/components/Contact.js
 import React from "react";
 import { motion } from "framer-motion";
-import { toast, Toaster } from "react-hot-toast";
+import { FaEnvelope, FaPhone } from "react-icons/fa";
 
 const Contact = () => {
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    toast.success("Message sent successfully!");
-    e.target.reset(); // Reset the form after submission
-  };
-
   return (
     <section
       id="contact"
-      className="py-20 px-4 md:px-20 bg-gray-800 text-white"
+      className="min-h-screen flex flex-col justify-center items-center bg-gray-800 text-white px-6 md:px-20"
     >
-      {/* Positioning the toast at the top-center */}
-      <Toaster position="top-center" reverseOrder={false} />
+      <h2 className="text-4xl font-bold mb-8 text-center">Get in Touch</h2>
 
-      <h2 className="text-4xl font-bold mb-8 text-center">Contact Me</h2>
+      <motion.div
+        className="bg-gray-700 p-6 md:p-10 rounded-lg shadow-lg text-center space-y-6"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+      >
+        <p className="text-xl">Feel free to reach out to me via email:</p>
 
-      <div className="max-w-md mx-auto space-y-8">
-        <motion.div
-          className="bg-gray-700 p-4 rounded-lg shadow-lg text-center"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
+        <a
+          href="mailto:k.devsingh14@gmail.com"
+          className="flex items-center justify-center space-x-2 text-blue-400 text-2xl font-semibold hover:underline"
         >
-          <p className="text-xl">Email me at:</p>
-          <a
-            href="mailto:youremail@example.com"
-            className="text-blue-400 underline"
-          >
-            k.devsingh14@gmail.com
-          </a>
-          <p className="mt-4 text-xl">Or call me at:</p>
-          <a href="tel:+1234567890" className="text-blue-400 underline">
-            +918130881702
-          </a>
-        </motion.div>
+          <FaEnvelope />
+          <span>k.devsingh14@gmail.com</span>
+        </a>
 
-        <motion.form
-          className="grid gap-4 bg-gray-700 p-6 rounded-lg shadow-lg"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-          onSubmit={handleSubmit}
+        {/* <a
+          href="tel:+918130881702"
+          className="flex items-center justify-center space-x-2 text-blue-400 text-2xl font-semibold hover:underline"
         >
-          <input
-            className="p-3 rounded bg-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500"
-            type="text"
-            placeholder="Name"
-            required
-          />
-          <input
-            className="p-3 rounded bg-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500"
-            type="email"
-            placeholder="Email"
-            required
-          />
-          <textarea
-            className="p-3 rounded bg-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500"
-            placeholder="Message"
-            rows="4"
-            required
-          ></textarea>
-          <button
-            className="px-4 py-2 bg-blue-500 rounded hover:bg-blue-600 transition duration-300 transform hover:scale-105 text-white font-semibold"
-            type="submit"
-          >
-            Send
-          </button>
-        </motion.form>
-      </div>
+          <FaPhone />
+          <span>+91 8130881702</span>
+        </a> */}
+      </motion.div>
     </section>
   );
 };
